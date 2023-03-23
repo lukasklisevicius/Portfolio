@@ -1,0 +1,9 @@
+.apper{
+    animation: appear 0.3s forwards;
+}
+
+@keyframes appear {
+    from{opacity: 0;}
+    to{opacity: 1;}
+    
+}

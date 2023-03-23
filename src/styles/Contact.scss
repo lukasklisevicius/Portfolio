@@ -1,0 +1,27 @@
+@import './Mixins.scss';
+
+a{
+    color: $light;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover{
+        color: $primary;
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    &:active{
+        transform: scale(0.9);
+        transition: 0.3s;
+    }
+}
+
+.social{
+    width: 60%;
+    @include center();
+    justify-content: space-between;
+
+}
+
+.icon-link{
+    font-size: 2.4rem;
+}

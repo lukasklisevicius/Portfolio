@@ -1,0 +1,12 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$dark: #081C15;
+$white: #ffffff;
+$primary: #40916C;
+$light: #74C69D;
+$lighter: #B7E4C7;
+$shadow: rgba(64, 145, 109, 0.3);

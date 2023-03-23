@@ -1,0 +1,26 @@
+@import './Mixins.scss';
+
+.container{
+    @include center();
+    width: 70%;
+    height: 100%;
+    background-color: $white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    // border: 1px solid black;
+    flex-direction: row;
+    padding: 4%;
+    box-shadow: 10px 10px 31px -5px #c9c9c9;
+    -webkit-box-shadow: 10px 10px 31px -5px #c9c9c9;
+    -moz-box-shadow: 10px 10px 31px -5px #c9c9c9;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    color: $light;
+}

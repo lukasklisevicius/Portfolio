@@ -1,0 +1,33 @@
+@import './Mixins.scss';
+.con{
+ .text{
+    color: $dark;
+
+    p{
+      font-size: 14px;
+      span{
+         font-size: 16px;
+         font-weight: bold;
+         color: $primary;
+         text-transform: uppercase;
+      }
+    }
+ }
+}
+.project{
+   .text{
+      width: 45%;
+   h2{
+      color: $dark;
+   }
+   p{
+      font-size: 14px;
+   }
+}
+   .project-img{
+      width: 55%;
+      img{
+         width: 100%;
+      }
+   }
+}

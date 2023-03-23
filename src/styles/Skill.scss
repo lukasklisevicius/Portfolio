@@ -1,0 +1,29 @@
+@import './Mixins.scss';
+
+.skill{
+    opacity: 0.4;
+    padding: 10px;
+    border-radius: 10px;
+    // margin: 10px;
+    text-align: center;
+    @include center();
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 47%;
+    // border: 1px solid pink;;
+    img{
+        width: 40%;
+    }
+    box-shadow: 10px 10px 31px -5px $shadow;
+    -webkit-box-shadow: 10px 10px 31px -5px $shadow;
+    -moz-box-shadow: 10px 10px 31px -5px $shadow;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    filter:grayscale(1);
+    h3{
+        color: $dark;
+    }
+    p{color: $light;}
+
+}

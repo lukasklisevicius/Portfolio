@@ -1,0 +1,82 @@
+@import './Mixins.scss';
+.con{
+    width: 100%;
+    height: 100%;
+    @include center();
+    .image{
+        width: 35%;
+        object-fit: cover;
+        transform: rotateZ(5deg);
+        -webkit-box-shadow: 10px 10px 31px -5px #a1a1a1;
+        -moz-box-shadow: 10px 10px 31px -5px #B7E4C7;
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0 100px;
+        border: 1px solid white;
+        img{
+            width: 90%;
+            border: 5px solid white;
+            border-radius: 20px;
+        }
+    }
+
+    .con-image{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    .text{
+        color: $dark;
+        padding: 30px;
+        width: 50%;
+        height: 80%;
+        @include center();
+        flex-direction: column;
+        align-items:  flex-start;
+        justify-content: space-around;
+        h2{
+            color: $primary;
+        }
+
+        .btn{
+
+
+            a{
+                font-weight: bold;
+                display: block;
+                border-radius: 10px;
+                padding: 10px 50px;
+                width: 100%;
+                height: 100%;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                background-color: $lighter;
+                box-shadow: 10px 10px 31px -5px $shadow;
+                -webkit-box-shadow: 10px 10px 31px -5px $shadow;
+                -moz-box-shadow: 10px 10px 31px -5px $shadow;
+            }
+        }
+        .btn.white{
+            a{
+                
+                color: $light;
+                background-color: $white;
+                box-shadow: 10px 10px 31px -5px $shadow;
+                -webkit-box-shadow: 10px 10px 31px -5px $shadow;
+                -moz-box-shadow: 10px 10px 31px -5px $shadow;
+            }
+
+        }
+    }
+}
+
+.buttons{
+    width: 80%;
+    @include center();
+    flex-direction: row;
+    justify-content: space-between;
+}
